@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import img1 from "../assets/images/ploan.png"
 
 export default function AboutSection() {
   const navigate = useNavigate();
@@ -81,7 +82,7 @@ export default function AboutSection() {
           {/* ── Right Image ── */}
           <div className="w-full lg:w-[420px] xl:w-[480px] flex-shrink-0">
             <img
-              src="../src/assets/images/ploan.png"
+              src={img1}
               alt="Small business owners"
               className="w-full h-auto object-cover"
               style={{ display: "block", minHeight: "480px", backgroundColor: "#f3f3f3" }}

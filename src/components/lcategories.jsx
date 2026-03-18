@@ -1,32 +1,41 @@
+import img1 from "../assets/images/ploan.png"
+import img2 from "../assets/images/hloan.png"
+import img3 from "../assets/images/bloan.png"
+import img4 from "../assets/images/eloan.png"
+import img5 from "../assets/images/travel.jpg"
+
+
+
+
 const items = [
   {
     title: "Personal Loans",
     desc: "Quick and flexible personal loans for your immediate needs",
-    img: "../src/assets/images/ploan.png",
+    img: img1,
     no: "01"
   },
   {
     title: "Home Improvement",
     desc: "Shower your home with a home improvement loan",
-    img: "../src/assets/images/hloan.png",
+    img: img2,
     no: "02"
   },
   {
     title: "Small Business",
     desc: "The best idea for the first time new business and enough time",
-    img: "../src/assets/images/bloan.png",
+    img: img3,
     no: "03"
   },
   {
     title: "Studying Abroad",
     desc: "Student loans may be offered as part of a total package",
-    img: "../src/assets/images/eloan.png",
+    img: img4,
     no: "04"
   },
   {
     title: "Buying Dream Vehicle",
     desc: "Buy a dream vehicle? We can make it come true",
-    img: "../src/assets/images/travel.jpg",
+    img: img5,
     no: "05"
   }
 ];

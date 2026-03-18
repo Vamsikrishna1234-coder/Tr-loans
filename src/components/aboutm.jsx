@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import img1 from "../assets/images/hloan.png"
 
 function useInView(threshold = 0.15) {
   const ref = useRef(null);
@@ -200,7 +201,7 @@ export default function AboutHero() {
             {/* Image */}
             <div className="relative z-10 rounded-2xl overflow-hidden w-full" style={{ aspectRatio: "4/3" }}>
               <img
-                src="../src/assets/images/hloan.png"
+                src={img1}
                 alt="TR Financial Services team"
                 className="w-full h-full object-cover"
                 style={{ display: "block" }}

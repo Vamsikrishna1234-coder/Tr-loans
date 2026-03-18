@@ -1,151 +1,29 @@
-// import { useEffect, useState } from "react";
-
-// const slides = [
-//   {
-//     img: "../src/assets/images/ploan.png",
-//     title: "Personal Loans",
-//     desc: "Quick and flexible personal loans for your immediate needs."
-//   },
-//   {
-//     img: "../src/assets/images/hloan.png",
-//     title: "Home Loans",
-//     desc: "Turn your dream home into reality with easy financing."
-//   },
-//   {
-//     img: "../src/assets/images/bloan.png",
-//     title: "Business Loans",
-//     desc: "Grow your business with fast and reliable funding."
-//   },
-//   {
-//     img: "../src/assets/images/eloan.png",
-//     title: "Education Loans",
-//     desc: "Invest in your future with affordable education loans."
-//   }
-// ];
-
-// export default function HeroSection() {
-//   const [current, setCurrent] = useState(0);
-
-//   // Auto slide
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       nextSlide();
-//     }, 3000);
-//     return () => clearInterval(interval);
-//   }, [current]);
-
-//   const nextSlide = () => {
-//     setCurrent((prev) => (prev + 1) % slides.length);
-//   };
-
-//   const prevSlide = () => {
-//     setCurrent((prev) =>
-//       prev === 0 ? slides.length - 1 : prev - 1
-//     );
-//   };
-
-//   return (
-//     <section className="relative w-full h-[100vh] overflow-hidden">
-
-//       {/* Images */}
-//       {slides.map((slide, index) => (
-//         <div
-//           key={index}
-//           className={`absolute inset-0 transition-opacity duration-1000 ${
-//             index === current ? "opacity-100 z-10" : "opacity-0 z-0"
-//           }`}
-//         >
-//           <img
-//             src={slide.img}
-//             alt={slide.title}
-//             className="w-full h-full object-cover"
-//           />
-//         </div>
-//       ))}
-
-//       {/* Overlay */}
-//       <div className="absolute inset-0 bg-black/20 z-20"></div>
-
-//       {/* Content */}
-//       <div className="absolute inset-0 z-30 flex items-center justify-center text-center px-4">
-//         <div className="max-w-3xl text-white">
-//           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-//             {slides[current].title}
-//           </h1>
-
-//           <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-200">
-//             {slides[current].desc}
-//           </p>
-
-//           {/* Buttons */}
-//           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-//             <button className="px-15 py-3 bg-[#fbcf4e] hover:bg-yellow-400 text-black text-sm md:text-base font-semibold rounded transition">
-//               Get Started
-//             </button>
-
-            
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Left Arrow */}
-//       <button
-//         onClick={prevSlide}
-//         className="absolute left-4 top-1/2 -translate-y-1/2 z-40 bg-[#fbcf4e] hover:bg-black/60 text-white p-4 rounded-full"
-//       >
-//         ❮
-//       </button>
-
-//       {/* Right Arrow */}
-//       <button
-//         onClick={nextSlide}
-//         className="absolute right-4 top-1/2 -translate-y-1/2 z-40 bg-[#fbcf4e] hover:bg-black/60 text-white p-4 rounded-full"
-//       >
-//         ❯
-//       </button>
-
-//       {/* Dots */}
-//       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-40 flex gap-2">
-//         {slides.map((_, i) => (
-//           <button
-//             key={i}
-//             onClick={() => setCurrent(i)}
-//             className={`h-2.5 rounded-full transition ${
-//               i === current
-//                 ? "bg-[#fbcf4e] w-6"
-//                 : "bg-white/70 w-2.5"
-//             }`}
-//           />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
+import img1 from "../assets/images/ploan.png"
+import img2 from "../assets/images/hloan.png"
+import img3 from "../assets/images/bloan.png"
+import img4 from "../assets/images/eloan.png"
 
 
 import { useEffect, useState } from "react";
 
 const slides = [
   {
-    img: "../src/assets/images/ploan.png",
+    img: img1,
     title: "Personal Loans",
     desc: "Quick and flexible personal loans for your immediate needs."
   },
   {
-    img: "../src/assets/images/hloan.png",
+    img: img2,
     title: "Home Loans",
     desc: "Turn your dream home into reality with easy financing."
   },
   {
-    img: "../src/assets/images/bloan.png",
+    img: img3,
     title: "Business Loans",
     desc: "Grow your business with fast and reliable funding."
   },
   {
-    img: "../src/assets/images/eloan.png",
+    img: img4,
     title: "Education Loans",
     desc: "Invest in your future with affordable education loans."
   }

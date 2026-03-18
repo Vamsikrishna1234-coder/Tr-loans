@@ -54,6 +54,7 @@ export default function LoanCategories() {
             {/* Image */}
             <img
               src={item.img}
+              loading="lazy"
               alt={item.title}
               className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
             />

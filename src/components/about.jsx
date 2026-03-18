@@ -83,6 +83,7 @@ export default function AboutSection() {
           <div className="w-full lg:w-[420px] xl:w-[480px] flex-shrink-0">
             <img
               src={img1}
+              loading="lazy"
               alt="Small business owners"
               className="w-full h-auto object-cover"
               style={{ display: "block", minHeight: "480px", backgroundColor: "#f3f3f3" }}

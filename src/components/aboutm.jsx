@@ -203,6 +203,7 @@ export default function AboutHero() {
               <img
                 src={img1}
                 alt="TR Financial Services team"
+                loading="lazy"
                 className="w-full h-full object-cover"
                 style={{ display: "block" }}
                 onError={(e) => {

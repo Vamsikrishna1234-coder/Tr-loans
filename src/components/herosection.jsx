@@ -97,6 +97,7 @@ export default function HeroSection() {
             <img
               src={slide.img}
               alt={slide.title}
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </div>

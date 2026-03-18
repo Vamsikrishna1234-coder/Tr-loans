@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import img1 from "../assets/images/herobnr.jpg"
 
 export default function LoanHeroBanner() {
   const [openForm, setOpenForm] = useState(false);
@@ -41,7 +42,8 @@ export default function LoanHeroBanner() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="../src/assets/images/herobnr1.jpg"
+            src={img1}
+            loading="lazy"
             alt="Loan background"
             className="w-full h-full object-cover"
           />

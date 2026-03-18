@@ -1,7 +1,7 @@
 import About from "../components/about";
 import FeaturesSection from "../components/features";
 import HeroSection from "../components/herosection";
-import Lcategories from "../components/Lcategories";
+import Lcategories from "../components/lcategories";
 import LoanHeroBanner from "../components/herobanner";
 import HowItWorks from "../components/howitworks";
 
